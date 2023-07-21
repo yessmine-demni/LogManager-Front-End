@@ -3,20 +3,21 @@ import { LogServiceService } from '../log-service.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-list-log',
-  templateUrl: './list-log.component.html',
-  styleUrls: ['./list-log.component.css']
+  selector: 'app-list-user',
+  templateUrl: './list-user.component.html',
+  styleUrls: ['./list-user.component.css']
 })
-export class ListLogComponent implements OnInit {
+export class ListUserComponent implements OnInit {
+
   constructor(private service: LogServiceService) { }
 
-  logs: any[] = [];
+  users: any[] = [];
 
   ngOnInit(): void {
-    this.service.findAllLogs().subscribe(
+    this.service.findAllUsers().subscribe(
       (data: any) => {
         console.log(data);
-        this.logs = data;
+        this.users = data;
       },
       (error: any) => {
         console.error(error);
@@ -24,4 +25,5 @@ export class ListLogComponent implements OnInit {
     );
   }
 }
+
 

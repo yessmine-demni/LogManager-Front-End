@@ -1,1 +1,10 @@
-<p>list-log works!</p>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Path</th>
+  </tr>
+  <tr *ngFor="let log of logs">
+    <td>{{ log.name }}</td>
+    <td>{{ log.path }}</td>
+  </tr>
+</table>

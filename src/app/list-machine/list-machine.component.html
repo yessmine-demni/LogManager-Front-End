@@ -1,0 +1,12 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Host</th>
+    <th>Password</th>
+  </tr>
+  <tr *ngFor="let machine of machines">
+    <td>{{ machine.name }}</td>
+    <td>{{ machine.host }}</td>
+    <td>{{ machine.password }}</td>
+  </tr>
+</table>

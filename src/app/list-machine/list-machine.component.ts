@@ -3,20 +3,20 @@ import { LogServiceService } from '../log-service.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-list-log',
-  templateUrl: './list-log.component.html',
-  styleUrls: ['./list-log.component.css']
+  selector: 'app-list-machine',
+  templateUrl: './list-machine.component.html',
+  styleUrls: ['./list-machine.component.css']
 })
-export class ListLogComponent implements OnInit {
+export class ListMachineComponent implements OnInit {
   constructor(private service: LogServiceService) { }
 
-  logs: any[] = [];
+  machines: any[] = [];
 
   ngOnInit(): void {
-    this.service.findAllLogs().subscribe(
+    this.service.findAllMachines().subscribe(
       (data: any) => {
         console.log(data);
-        this.logs = data;
+        this.machines = data;
       },
       (error: any) => {
         console.error(error);
@@ -24,4 +24,3 @@ export class ListLogComponent implements OnInit {
     );
   }
 }
-
