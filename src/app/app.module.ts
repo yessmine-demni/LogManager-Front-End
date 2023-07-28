@@ -10,6 +10,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { CreateLogComponent } from './create-log/create-log.component';
+import { CreateMachineComponent } from './create-machine/create-machine.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { UpdatelogComponent } from './updatelog/updatelog.component';
+import { UpdatemachineComponent } from './updatemachine/updatemachine.component';
+import { UpdateuserComponent } from './updateuser/updateuser.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +24,14 @@ import { HttpClientModule } from '@angular/common/http';
     
     ListMachineComponent,
     ListUserComponent,
-    NavbarComponent
+    NavbarComponent,
+    CreateLogComponent,
+    CreateMachineComponent,
+    CreateUserComponent,
+    UpdatelogComponent,
+    UpdatemachineComponent,
+    UpdateuserComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -26,6 +39,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     RouterModule,
     HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

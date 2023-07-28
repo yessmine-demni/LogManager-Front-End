@@ -1,0 +1,21 @@
+.createcar-input {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    background-color: #f1f1f1;
+margin: 10px;}
+.createcar-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #1c1d1c;
+    color: white;
+    transition: background-color 0.2s;
+  }
+  .createcar-button:hover {
+    background-color: #0e0e0e;}

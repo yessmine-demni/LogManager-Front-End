@@ -1,0 +1,16 @@
+<input type="text" [(ngModel)]="Name">
+<input type="text" [(ngModel)]="Path">
+<button type="button" (click)="createlog()" >createloh</button><BR>
+
+<label for="mon-combobox">Choisissez une option :</label>
+<div class="form-group">
+    <label for="contactMethod">Contact method</label>
+    <select 
+        name="contactMethod" 
+        id="contactMethod" 
+        class="form-control"
+        [(ngModel)]="selectedMachineId">
+        <option *ngFor="let m of machines" [value]="m.id">{{m.id}}:{{ m.name }}</option>
+    </select>
+    <button (click)="createlog()" >save log</button>
+</div>

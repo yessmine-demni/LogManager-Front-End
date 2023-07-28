@@ -1,17 +1,16 @@
 /* Réinitialisation des marges et des paddings pour le tableau */
-table {
-    border-collapse: collapse;
-    width: 100%;
-  }
+
   
   /* Styles pour les en-têtes (th) du tableau */
   th {
-    background-color: #f2f2f2;
     color: #333;
     font-weight: bold;
     padding: 10px;
-    text-align: left;
-    border: 1px solid #ccc;
+    text-align: center;
+  }
+
+  .header{
+    background-color: #f2f2f2;
   }
   
   /* Styles pour les cellules (td) du tableau */
@@ -19,8 +18,7 @@ table {
     background-color: #fff;
     color: #333;
     padding: 10px;
-    text-align: left;
-    border: 1px solid #ccc;
+    text-align: center;
   }
   
   /* Style alternatif pour les lignes */
@@ -28,3 +26,32 @@ table {
     background-color: #f2f2f2;
   }
   
+  .table{
+    overflow: hidden;
+    width: 80%;
+    margin: 50px 10%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .delete-btn{
+    border-radius: 5px;
+    margin: 5px 15px;
+    padding: 5px 15px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+  }
+
+  .update-btn{
+    border-radius: 5px;
+    margin: 5px 15px;
+    padding: 5px 15px;
+    cursor: pointer;
+
+    background-color: rgb(99, 99, 231);
+    color: white;
+    border: none;
+  }

@@ -14,4 +14,5 @@ export class NavbarComponent {
     console.log(path)
     this.router.navigate([path]);
   }
+ 
 }

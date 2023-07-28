@@ -11,6 +11,7 @@ export class ListMachineComponent implements OnInit {
   constructor(private service: LogServiceService) { }
 
   machines: any[] = [];
+  
 
   ngOnInit(): void {
     this.service.findAllMachines().subscribe(
@@ -24,3 +25,4 @@ export class ListMachineComponent implements OnInit {
     );
   }
 }
+  
